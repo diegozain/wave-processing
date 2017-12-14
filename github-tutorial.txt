@@ -1,0 +1,118 @@
+github tutorial
+
+*****************************************************************
+
+                          UP
+
+*****************************************************************
+
+----------------------------------
+
+ create new github project
+
+----------------------------------
+
+0. create project in github webpage
+
+1. go to directory in personal computer
+
+2. $ git init
+
+3. $ git add .
+
+4. $ git commit -m "first commit"
+
+5. copy url from github webpage, i.e. 
+
+    https://github.com/diegozain/gerjoii.git
+    
+6. $ git remote add origin https://github.com/diegozain/gerjoii.git
+   $ git remote -v
+   
+7. $ git push -u origin master
+
+----------------------------------
+
+ create new branch - $ git branch
+
+----------------------------------
+
+0. $ git fetch origin <--- update changes from master branch
+
+1. $ git checkout -b [name_of_your_new_branch] <-creates and switches to branch
+
+----------------------------------
+
+ push branch
+
+----------------------------------
+
+0. $ git push origin [name_of_branch]
+
+----------------------------------
+
+ change to branch
+
+----------------------------------
+
+0. $ git checkout [name_of_branch]
+
+----------------------------------
+
+ add new file
+
+----------------------------------
+
+0. put it where you want it in project
+
+1. $ git add .
+
+2. $ git commit -m "added a file"
+
+3. git push origin [branch]
+
+*****************************************************************
+
+                          DOWN
+
+*****************************************************************
+
+----------------------------------
+
+ get project
+
+----------------------------------
+
+0. go to directory where this will live
+
+1. $ git clone https://github.com/diegozain/gerjoii.git
+
+2. $ git pull [remote] [branch]
+
+----------------------------------
+
+ merge branch [master] to [develop]
+
+----------------------------------
+
+0. $ git checkout [develop]
+
+1. $ git merge [master]
+
+2. go to 'add new file' upload.
+
+----------------------------------
+
+ merge branch [develop] to [master]
+
+----------------------------------
+
+0. $ git checkout [develop]
+
+1. $ git merge [master]
+
+2. $ git checkout [master]
+
+3. $ git merge [develop]
+
+4. go to 'add new file' upload.
